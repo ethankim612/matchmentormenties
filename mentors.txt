@@ -1,0 +1,49 @@
+
+HS20111	박하늘	국내	수학, 과학, 영어
+HS20117	이서윤	국내	국어, 수학, 과학, 영어
+MS20109	남유진	국내	국어, 수학, 사회, 과학, 영어, 스페인어
+HS20126	조윤우	국내	국어, 사회
+MS30119	이서연	국내	국어, 사회, 일본어, 학교 생활 팁&진로 고민
+MS20307	김태호	국내	수학
+MS20416	이지우	국내	국어, 수학, 사회, 과학, 영어
+HS10214	이가현	국내	국어, 과학, 수학, 영어, 사회/역사(중학교), 내신공부법
+HS20209	나예인	국내	국어, 사회, 스페인어
+MS20120	이병희	국내	국어, 수학, 사회, 영어
+HS20123	임채현	국내	수학, 과학, 영어
+HS10419	이정효	국내	수학, 과학
+HS20124	정민서	국내	국어, 수학, 사회
+MS30319	이원우	국내	국어, 수학, 사회
+HS10109	김예원	국내	국어, 수학, 과학
+HS10124	장지영	국내	국어, 수학, 사회, 과학, 영어, 중국어
+HS20208	김혜중	국내	국어, 수학, 일본어
+HS20109	박상민	국내	국어
+HS20227	최윤수	국내	국어, 수학
+HS10404	김보민	국내	과학, 영어
+MS20322	장한이	국내	수학, 과학, 영어
+MS20312	손도윤	국내	국어, 수학
+HS20225	정지용	국내	국어, 사회, 한국사/ap미국사/ap세계사/동아시아사
+HS20313	오예림	국제	국어, 수학, 사회, 과학, 중국어
+HS20410	방지민	국제	수학, 사회, 과학, AP: Sciences, SAT: Math, 학교생활 및 생기부 팁
+HS10406	김지빈	국제	국어, 과학, 영어, SAT: Math, AP Psychology, 그외 학교 관련 전부 다
+MS20323	정연우	국제	국어, 수학, 영어, 스페인어, AP: English, AP: History and Social Sciences, AP: Sciences, SAT: Reading
+HS20315	이승윤	국제	수학, 영어, 스페인어, AP: Math and Computer Science, AP: Sciences, SAT: Reading, SAT: Math
+HS10407	김지유	국제	국어, SAT: Math, 고등학교/대학교 진학
+MS20103	김려원	국제	국어, 수학, 사회, 과학, 영어, 스페인어
+HS10428	김지호	국제	사회, Ap World History, Ap Comparative government , 역사(중학교+고등한국사)
+MS20427	황채원	국제	국어, 수학, 영어, AP: English, SAT: Reading
+HS20331	이세빈	국제	수학, 과학
+HS20307	노은채	국제	수학, 과학, 영어, AP: Sciences, AP 미시경제
+HS20412	소희주	국제	국어, 사회, 영어, AP: History and Social Sciences, SAT: Reading, SAT: Math
+HS10122	이시은	국제	국어, 사회, 영어, 스페인어, MUN, Essay Writing, Debate
+HS20429	정서현	국제	수학, 과학, 진로/계열 관련 멘토링
+HS20415	이지해	국제	AP: History and Social Sciences, AP Micro/Macro econ
+HS20304	김지은	국제	AP: History and Social Sciences
+MS30215	이대호	국제	영어, SAT: Reading, SAT: Math, Debate, MUN or any public speaking
+HS20329	김도연	국제	수학, 과학, AP: Sciences, AP physics
+HS20306	김태희	국제	AP: History and Social Sciences, AP: World Language and Cultures, 한국사
+HS20419	정예하	국제	AP Psychology, AP Micro/Macro, AP Biology, 영어
+HS30402	김민준	국제	영어, AP: English, AP: History and Social Sciences, AP: Math and Computer Science, AP: Sciences, AP: World Language and Cultures, SAT: Reading, SAT: Math
+HS20314	이다은	국제	수학, 영어, SAT: Reading, SAT: Math, AP Micro/Macro econ
+HS10213	설승환	국제	사회, 일본어
+HS10119	이동권	국제	국어, 수학, 사회, 과학, 영어
+HS10408	김태정	국제	수학, SAT: Math, AP Physics, 영어 회화, 고등학교/대학교 입시
