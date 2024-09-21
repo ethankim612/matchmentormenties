@@ -1,6 +1,6 @@
-# 학번을 통해 학년을 추출하고 MS/HS 구분하는 함수
+
 def get_grade_level(student_id):
-    level_prefix = student_id[:2]
+    level_prefix = student_id[:2]  # Extract the first two characters
     if level_prefix == "MS":
         level = "MS"
     elif level_prefix == "HS":
@@ -10,29 +10,36 @@ def get_grade_level(student_id):
         level = "HS"
     
     try:
-        year = int(student_id[2:4])
+        year = int(student_id[2:4])  # Extract the next two digits as year
     except ValueError:
         print(f"Error: Invalid year in student ID {student_id}, defaulting to year 1")
         year = 1
     
     return level, year
 
-# 과목 데이터를 정규화하여 비교 정확성을 높이는 함수
+# Helper function to normalize subjects by stripping whitespace and converting to lowercase
 def normalize_subject(subject):
     return subject.strip().lower()
 
 # Function to calculate similarity between mentor and mentee based on subjects
 def calculate_similarity(mentor_subjects, mentee_subjects):
+    # Normalize subjects for accurate comparison
     mentor_subjects = [normalize_subject(subject) for subject in mentor_subjects]
     mentee_subjects = [normalize_subject(subject) for subject in mentee_subjects]
+    
+    # Find the common subjects and calculate similarity
     common_subjects = set(mentor_subjects) & set(mentee_subjects)
     total_subjects = set(mentor_subjects) | set(mentee_subjects)
+    
+    # If no subjects are present, return 0
     if len(total_subjects) == 0:
         return 0
+    
+    # Calculate similarity as the ratio of common subjects to total subjects
     similarity = len(common_subjects) / len(total_subjects)
-    return round(similarity, 2)
+    
+    return round(similarity, 2)  # Return the similarity rounded to 2 decimal places
 
-# Function to match mentors and mentees based on similarity and grade level
 def match_mentors_mentees(mentors, mentees):
     matches = []
     
@@ -69,6 +76,20 @@ def match_mentors_mentees(mentors, mentees):
                         mentee['mentorCount'] += 1
                         matches.append((mentor['name'], f"{mentor_level}{mentor_year}", mentee['name'], f"{mentee_level}{mentee_year}", similarity))
                         break
+
+    # Third pass: Ensure every mentee is matched (even if no similarity)
+    unmatched_mentees = [mentee for mentee in mentees if mentee['mentorCount'] == 0]
+    for mentee in unmatched_mentees:
+        mentee_level, mentee_year = get_grade_level(mentee['id'])
+        for mentor in mentors:
+            mentor_level, mentor_year = get_grade_level(mentor['id'])
+            if mentor['menteeCount'] < 2 and ((mentor_level == "HS" and mentee_level in ["HS", "MS"]) or (mentor_level == mentee_level and mentor_year > mentee_year)):
+                similarity = calculate_similarity(mentor['subjects'], mentee['subjects'])
+                mentor['menteeCount'] += 1
+                mentee['mentorCount'] += 1
+                matches.append((mentor['name'], f"{mentor_level}{mentor_year}", mentee['name'], f"{mentee_level}{mentee_year}", similarity))
+                break
+
     return matches
 
 # Function to read and parse mentor and mentee data from text files
